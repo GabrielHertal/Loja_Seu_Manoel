@@ -19,7 +19,7 @@ namespace Loja_Seu_Manoel.Controllers
             try
             {
                 var pedidos = await _pedidosService.Embalar(entrada.Pedidos);
-                return Ok(pedidos);
+                return Ok(new { pedidos });
             }
             catch (Exception ex)
             {

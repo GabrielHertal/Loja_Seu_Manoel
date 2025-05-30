@@ -1,6 +1,4 @@
-﻿using Loja_Seu_Manoel.Models;
-
-namespace Loja_Seu_Manoel.DTO
+﻿namespace Loja_Seu_Manoel.DTO
 {
     public class PedidoDTO
     {
