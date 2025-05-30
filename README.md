@@ -73,19 +73,21 @@ http://localhost:5000/swagger
 ### 📦 Saída Esperada
 
 ```json
-{
-  "pedidos": [
-    {
-      "pedido_id": 1,
-      "caixas": [
-        {
-          "caixa_id": "Caixa 2",
-          "produtos": ["PS5", "Volante"]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id_Pedido": 1,
+    "caixas": [
+      {
+        "caixa": "Caixa 1",
+        "produtos": [
+          "PS5",
+          "Volante"
+        ],
+        "observacao": null
+      }
+    ]
+  }
+]
 ```
 
 ---
