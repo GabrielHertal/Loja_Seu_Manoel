@@ -19,7 +19,10 @@ namespace Loja_Seu_Manoel.Services
                 var caixasDisponiveis = await _context.Caixas.ToListAsync();
                 var pedidosSaida = new List<PedidoSaidaDTO>();
                 int caixaprodutoID = 0;
-
+                if(pedidos == null)
+                {
+                    throw new ArgumentException("A lista de pedidos não pode ser nula ou vazia.");
+                }
                 foreach (var pedido in pedidos)
                 {
                     var pedidodb = new Pedido

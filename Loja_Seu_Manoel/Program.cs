@@ -38,6 +38,7 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
 app.UseAuthorization();
+app.UseMiddleware<JsonValidation>();
 
 app.MapControllers();
 using (var scope = app.Services.CreateScope())
